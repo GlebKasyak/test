@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactSVG } from 'react-svg'
 
 import "./style.scss";
 
@@ -9,7 +8,7 @@ const Icon = ({ icon, text, name, activeName, onClick }) => {
            onClick={ onClick.bind(null, name) }
            className={"icon-wrapper " + ((name === activeName) ? "icon-wrapper--active" : "")}
        >
-           <ReactSVG
+           <img
                className="icon"
                src={ icon }
                alt="Icon"
