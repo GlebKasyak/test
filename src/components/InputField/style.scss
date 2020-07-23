@@ -1,0 +1,14 @@
+@import "./../../assets/styles/variables";
+
+
+.input-field {
+  border: 2px solid $light_grey;
+  border-radius: $borderValue;
+  padding: 0.3rem 0.5rem;
+}
+
+::placeholder {
+  color: $light_grey!important;
+  opacity: 1!important;
+}
+

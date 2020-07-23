@@ -1,0 +1,11 @@
+@import "./../../assets/styles/variables";
+
+
+.btn {
+  border-radius: $borderValue;
+  background: $blue;
+  color: $white;
+  width: 3.5rem;
+  height: 2rem;
+  border: none;
+}

@@ -1,0 +1,78 @@
+@import "variables";
+@import "reset";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1rem 0;
+  height: 600px;
+
+  .icons-block {
+    display: flex;
+  }
+
+  .control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .add-movie-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.MuiInputBase-root {
+  height: 100% !important;
+  padding: 0!important;
+}
+
+.MuiInputBase-input {
+  border: 2px solid $light_grey!important;
+  border-radius: $borderValue!important;
+}
+
+.input_material-ui {
+  width: 150px !important;
+}
+
+@media (max-width: 575px) {
+  .MuiAutocomplete-root {
+    width: 100% !important;
+    .input_material-ui {
+      width: 100% !important;
+    }
+  }
+
+  .container {
+    .btn {
+      margin-left: 0.75rem;
+    }
+
+    .control {
+      flex-direction: column-reverse;
+      margin-top: 1rem;
+      align-items: flex-start;
+
+      .input-field {
+        width: 100% !important;
+      }
+
+      .icons-block {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
