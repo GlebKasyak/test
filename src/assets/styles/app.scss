@@ -22,6 +22,11 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 4rem;
+
+    .input-field {
+      width: 300px;
+      height: 35px;
+    }
   }
 
   .add-movie-container {
@@ -39,6 +44,10 @@
   padding: 0!important;
 }
 
+.PrivateNotchedOutline-root-1 {
+  border: 0!important;
+}
+
 .MuiInputBase-input {
   border: 2px solid $light_grey!important;
   border-radius: $borderValue!important;
@@ -46,6 +55,7 @@
 
 .input_material-ui {
   width: 150px !important;
+  margin: 0 0.75rem 0 0!important;
 }
 
 @media (max-width: 575px) {

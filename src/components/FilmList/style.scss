@@ -2,7 +2,7 @@
 
 .film-list {
   margin-top: 2rem;
-  border-width: 0.125rem 0 0.125rem 0;
+  border-width: 0.125rem 0 0;
   border-style: solid;
   border-color: $grey;
 
@@ -23,14 +23,14 @@
     position: absolute;
   }
 
-
-  &:last-child {
-    border-bottom: none;
+  &__title {
+    flex: 1;
+    display: flex;
   }
 
   .film-info {
 
-    &__title {
+    &__title-wrapper {
       display: flex;
       justify-content: space-between;
       padding-right: 1rem;
@@ -63,6 +63,21 @@
       width: 0.75rem;
       height: 0.75rem;
       left: 0.3rem;
+    }
+  }
+
+  .checkbox-component {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+
+    .MuiButtonBase-root {
+      padding: 0;
+
+      .MuiSvgIcon-root {
+        font-size: 1rem;
+        color: $blue;
+      }
     }
   }
 }

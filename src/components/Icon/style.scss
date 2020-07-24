@@ -14,10 +14,16 @@
 
   &--active {
     padding-bottom: 0.125rem;
-    border-bottom: 0.2rem solid #3366FF;
+    border-bottom: 0.2rem solid $blue;
 
     #{ $self }__text {
-      color: #3366FF;
+      color: $blue;
+    }
+
+    .icon {
+      svg {
+        fill: $blue!important;
+      }
     }
   }
 
